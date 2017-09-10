@@ -24,7 +24,7 @@ Since this is a folder, you must use a MU Loader and I know of no better than th
 
 ### via Composer
 
-1. Add a line to your repositories array: `{ "type": "git", "url": "https://github.com/webaxones/wax-custom-login.php" }`
+1. Add a line to your repositories array: `{ "type": "vcs", "url": "https://github.com/webaxones/wax-custom-login" }`
 2. Add a line to your require block: `"webaxones/wax-custom-login": "dev-master"`
 3. Run: `composer update`
 
