@@ -4,6 +4,7 @@ This mu-plugin customize the login page without any parameters needed.
 As all themes have a screenshot, the idea is to reuse it on the login page.  
 Because it is not mandatory (but recommended) to have a screenshot saved in PNG format, this mu-plugin use wp_get_theme() to get a WP_Theme object for the active theme and find the good file : https://codex.wordpress.org/Function_Reference/wp_get_theme .  
 Because screenshots often include text in the bottom, a zoom (background-size:170%) is added to the image on custom login page to hide text.  
+Works with child themes as well.  
 
 
 ## Features
