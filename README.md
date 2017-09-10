@@ -15,7 +15,7 @@ Because screenshots often include text in the bottom, a zoom (background-size:17
 
 ## Screenshots
 
-![Results on click letter R](/assets/screenshots/screen-1.png?raw=true)
+![Screenshot](https://github.com/webaxones/wax-custom-login/raw/master/assets/screenshots/screenshot-1.png "Screenshot")
 
 ## Installation
 
