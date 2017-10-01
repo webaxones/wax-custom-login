@@ -18,21 +18,52 @@
 	 *  Change login image
 	 */
 
-	add_action( "login_head", "wax_login_head" );
+    add_action( 'login_head', 'wax_login_head' );
+    
 	function wax_login_head() {
+
 		$wax_active_theme     = wp_get_theme();
 		$wax_theme_screenshot = $wax_active_theme->get_screenshot();
+        $wax_site_name = get_bloginfo('name');
+        
 		if ( $wax_theme_screenshot ) {
 			?>
-            <style>body.login #login h1 a {
+            <style>
+                #login h1 {
+                    position: relative;
+                }
+                #login h1::before {
+                    content: "'<?php echo $wax_site_name; ?>'";
+                    display: block;
+                    width: 300px;
+                    height: 300px;
+                    line-height: 300px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 0;
+                    margin: 0 auto;
+                    text-align: center;
+                    z-index: -1;
+                    background-color: #0572a8;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size: .8em;
+                    font-weight: normal;
+                    font-style: italic;
+                }
+                #login h1 a {
                     background: url('<?php echo $wax_theme_screenshot; ?>') no-repeat scroll center top transparent;
                     width: 300px;
                     height: 300px;
                     background-size: 170%;
                     border-radius: 50%;
                     box-shadow: inset 0 0 3px rgba(0, 0, 0, .5);
-                    margin-bottom: 3rem
-                }</style>
+                    margin-bottom: 3rem;
+                    z-index: 1;
+                }
+                </style>
 			<?php
 		}
 	}
