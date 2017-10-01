@@ -35,5 +35,7 @@ Since this is a folder, you must use a MU Loader and I know of no better than th
 
 ## Changelog
 
+### 1.0.1 - 01 Oct 2017
+* Add CSS Rules to manage case where an image exists but is totally transparent 
 ### 1.0.0 - 10 Sep 2017
 * Initial
