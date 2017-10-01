@@ -25,6 +25,7 @@
 		$wax_active_theme     = wp_get_theme();
 		$wax_theme_screenshot = $wax_active_theme->get_screenshot();
         $wax_site_name = get_bloginfo('name');
+        $wax_site_name = html_entity_decode($wax_site_name); 
         
 		if ( $wax_theme_screenshot ) {
 			?>
@@ -33,7 +34,7 @@
                     position: relative;
                 }
                 #login h1::before {
-                    content: "'<?php echo $wax_site_name; ?>'";
+                    content: "<?php echo $wax_site_name; ?>";
                     display: block;
                     width: 300px;
                     height: 300px;
