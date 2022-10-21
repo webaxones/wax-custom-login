@@ -1,15 +1,15 @@
 {
-  "name": "webaxones/wax-custom-login",
-  "description": "Simply customize login page",
-  "license": "GPL-2.0",
-  "authors": [
-    {
-      "name": "Webaxones",
-      "email": "contact@webaxones.com"
-    }
-  ],
-  "type" : "wordpress-muplugin",
-  "require" : {
-    "composer/installers" : "~1.0"
-  }
+	"name": "webaxones/wax-custom-login",
+	"description": "Simply customize login page",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Webaxones",
+			"email": "contact@webaxones.com"
+		}
+	],
+	"type": "wordpress-muplugin",
+	"require": {
+		"composer/installers": "^2.0"
+	}
 }
