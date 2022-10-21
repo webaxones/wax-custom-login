@@ -88,7 +88,7 @@
 	 * @return  string             Return the current site title
 	 */
 
-	add_filter( 'login_headertitle', 'wax_login_logo_url_title' );
+	add_filter( 'login_headertext', 'wax_login_logo_url_title' );
 	function wax_login_logo_url_title() {
 		return get_bloginfo( 'name' );
 	}
